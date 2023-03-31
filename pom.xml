@@ -62,7 +62,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.32</version>
         </dependency>
-
+        <!--security-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -72,7 +72,7 @@
             <artifactId>spring-security-taglibs</artifactId>
             <version>5.2.2.RELEASE</version>
         </dependency>
-
+        <!--security-->
     </dependencies>
 
     <build>

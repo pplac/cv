@@ -66,28 +66,3 @@
 
 
 
-@media (min-width: 992px) {
-    .child-right {
-        float: right;
-        width: 10%;
-        background-color: #0d6efd;
-    }
-}
-
-.child-left {
-    float: left;
-    width: 90%;
-    background-color: #0dcaf0;
-
-}
-
-.lead mb-5 {
-    table-layout: fixed;
-    width: 100%;
-    word-wrap: break-word;
-    max-width: fit-content;
-}
-
-p {
-    word-wrap: break-word;
-}
