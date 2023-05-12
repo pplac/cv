@@ -38,7 +38,7 @@ public class ExperienceService {
 
     public ExperienceModel getExperienceById(Long id) {
         Optional<ExperienceModel> experience = repo.findById(id);
-        if(experience.isPresent()){
+        if (experience.isPresent()) {
             return repo.findById(id).orElse(null);
         } else {
             log.info("brak");
@@ -49,7 +49,6 @@ public class ExperienceService {
     public void saveEditExperience(ExperienceModel editExperience) {
         repo.save(editExperience);
     }
-
 
 
 }

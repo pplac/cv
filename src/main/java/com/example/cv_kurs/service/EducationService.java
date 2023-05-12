@@ -31,8 +31,8 @@ public class EducationService {
     }
 
     public EducationModel getEducationById(Long id) {
-        Optional <EducationModel> education = educationRepository.findById(id);
-        if(education.isPresent()) {
+        Optional<EducationModel> education = educationRepository.findById(id);
+        if (education.isPresent()) {
             return educationRepository.findById(id).orElse(null);
         } else {
             log.info("brak");

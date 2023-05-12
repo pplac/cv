@@ -31,7 +31,7 @@ public class AboutService {
 
     public AboutModel getAboutById(Long id) {
         Optional<AboutModel> about = aboutRepo.findById(id);
-        if(about.isPresent()){
+        if (about.isPresent()) {
             return aboutRepo.findById(id).orElse(null);
         } else {
             log.info("brak");
@@ -42,8 +42,6 @@ public class AboutService {
     public void saveEditAbout(AboutModel editAbout) {
         aboutRepo.save(editAbout);
     }
-
-
 
 
 //    public void updateAboutDescription(Long id, String description) {
