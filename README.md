@@ -1,3 +1,4 @@
 # My-cv
-# login: user
-# password: user
+login: user
+
+password: user
