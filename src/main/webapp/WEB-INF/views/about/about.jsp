@@ -46,22 +46,22 @@
                             <p class="lead mb-5">${about.description}</p>
                         </div>
 
-                                                            <security:authorize access="hasAnyRole('ADMIN')">
+                            <%--                                                            <security:authorize access="hasAnyRole('ADMIN')">--%>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             <form method="post" action='<c:url value="/about/${about.id}"/>'>
                                 <input type="submit" class="btn-edit" value="Delete"/>
                             </form>
                         </div>
-                                                            </security:authorize>
+                            <%--                                                            </security:authorize>--%>
 
 
-                                                            <security:authorize access="hasAnyRole('ADMIN')">
+                            <%--                                                            <security:authorize access="hasAnyRole('ADMIN')">--%>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             <form method="get" action='<c:url value="/editAbout/${about.id}"/>'>
                                 <input type="submit" class="btn-edit" value="Edit"/>
                             </form>
                         </div>
-                                                            </security:authorize>
+                            <%--                                                            </security:authorize>--%>
 
                     </div>
                 </div>
@@ -69,7 +69,7 @@
 
             </c:forEach>
 
-            <security:authorize access="hasAnyRole('ADMIN')">
+            <%--            <security:authorize access="hasAnyRole('ADMIN')">--%>
             <div class="container-fluid">
 
                 <form method="post" action='<c:url value="/about"/>'>
@@ -98,7 +98,7 @@
                         <div class="row">
                             <div class="col-10">
                                 <textarea class="form-control" type="text" rows="5" name="description"
-                                          placeholder="opis">
+                                          placeholder="about me">
                                 </textarea>
                             </div>
 
@@ -112,7 +112,7 @@
 
 
             </div>
-            </security:authorize>
+            <%--            </security:authorize>--%>
 
             <div class="social-icons">
                 <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>

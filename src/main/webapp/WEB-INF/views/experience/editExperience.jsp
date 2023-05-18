@@ -21,14 +21,14 @@
             <div class="container-fluid">
 
 
-            <div class="subheading mb-5">
-                Experience changes
-            </div>
+                <div class="subheading mb-5">
+                    Experience changes
+                </div>
 
-            <form method="post" action='<c:url value="/addExperience/${experienceModel.id}"/>'>
+                <form method="post" action='<c:url value="/addExperience/${experienceModel.id}"/>'>
 
 
-                <div class="container-margin-top">
+                    <div class="container-margin-top">
                         <div class="row">
                             <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                 <input class="form-control" type="text" name="jobTitle"
@@ -50,20 +50,19 @@
                             </div>
                             <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                 <textarea class="form-control" type="text" rows="5" name="jobDescription"
-                                          ${experienceModel.jobDescription}>
+                                ${experienceModel.jobDescription}>
                                 </textarea>
                             </div>
 
                         </div>
 
 
+                    </div>
+                </form>
 
-                </div>
-            </form>
 
-
+            </div>
         </div>
-</div>
 
     </section>
 </div>

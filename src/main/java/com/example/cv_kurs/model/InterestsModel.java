@@ -20,10 +20,7 @@ public class InterestsModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "interests_first_akapit")
-    private String interestsFirstAkapit;
-
-    @Column(name = "interests_next_akapit")
-    private String interestsNextAkapit;
+    @Column(name = "akapit")
+    private String akapit;
 
 }

@@ -84,15 +84,10 @@
                                           placeholder="opisz swoje obowiązki">
                                 </textarea>
                             </div>
-
                         </div>
-
-
                     </form>
                 </div>
             </div>
-
-
         </div>
     </section>
 </div>

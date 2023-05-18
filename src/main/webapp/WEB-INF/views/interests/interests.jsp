@@ -19,7 +19,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                            <p>${interests.interestsFirstAkapit}</p>
+                            <p>${interests.akapit}</p>
                         </div>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             <form method="post" action='<c:url value="/interests/${interests.id}"/>'>
@@ -27,58 +27,26 @@
                             </form>
                         </div>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                        <form method="get" action='<c:url value="/editInterests/${interests.id}"/>'>
-                        <input type="submit" class="btn-edit" value="Edit"/>
-                        </form>
-                        </div>
-                    </div>
-                </div>
-            </c:forEach>
-<c:forEach items="${interestsModel}" var="interests2">
-            <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                            <p class="mb-0">${interests.interestsNextAkapit}</p>
-                        </div>
-                        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                        <form method="post" action='<c:url value="/interests/${interests2.id}"/>'>
-                            <input type="submit" class="btn-edit" value="Delete"/>
-                        </form>
-                        </div>
-                        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                            <form method="get" action='<c:url value="/editInterests/${interests2.id}"/>'>
+                            <form method="get" action='<c:url value="/editInterests/${interests.id}"/>'>
                                 <input type="submit" class="btn-edit" value="Edit"/>
                             </form>
                         </div>
                     </div>
                 </div>
-
-        </c:forEach>
+            </c:forEach>
 
             <form method="post" action='<c:url value="/interests"/>'>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                            <textarea class="form-control" type="text" name="interestsFirstAkapit"
-                                      placeholder="pierwszy akapit">
+                            <textarea class="form-control" type="text" name="akapit"
+                                      placeholder="akapit">
                                 </textarea>
                         </div>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             <input class="btn-edit" type="submit" value="Add">
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                            <textarea class="form-control" type="text" name="interestsNextAkapit"
-                                      placeholder="kolejny akapit">
-                            </textarea>
-                        </div>
-                        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                            <input class="btn-edit" type="submit" value="Add">
-                        </div>
-                    </div>
-
                 </div>
             </form>
         </div>

@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface InterestsRepository extends JpaRepository<InterestsModel, Long> {
 
-    Page<EducationModel> findAllBy(Pageable pageable);
+    Page<InterestsModel> findAllBy(Pageable pageable);
 
 }
