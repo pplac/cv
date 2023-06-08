@@ -57,6 +57,7 @@
 
                             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <input class="btn-edit" type="submit" value="Save changes">
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             </div>
                         </div>
 

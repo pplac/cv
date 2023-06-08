@@ -50,6 +50,8 @@
                             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <form method="post" action='<c:url value="/about/${about.id}"/>'>
                                     <input type="submit" class="btn-edit" value="Delete"/>
+                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
                                 </form>
                             </div>
                         </security:authorize>
@@ -59,6 +61,8 @@
                             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <form method="get" action='<c:url value="/editAbout/${about.id}"/>'>
                                     <input type="submit" class="btn-edit" value="Edit"/>
+                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
                                 </form>
                             </div>
                         </security:authorize>
@@ -72,7 +76,7 @@
             <security:authorize access="hasAnyRole('ADMIN')">
                 <div class="container-fluid">
 
-                    <form method="post" action='<c:url value="/about"/>'>
+                    <form method="post" action='<c:url value="/about/"/>'>
                         <div class="container-margin-top">
 
                             <div class="row">
@@ -104,6 +108,8 @@
 
                                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <input class="btn-edit" type="submit" value="Add">
+                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
                                 </div>
                             </div>
 
