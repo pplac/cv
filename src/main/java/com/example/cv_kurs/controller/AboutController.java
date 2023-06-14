@@ -4,6 +4,8 @@ package com.example.cv_kurs.controller;
 import com.example.cv_kurs.model.AboutModel;
 import com.example.cv_kurs.service.AboutService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +24,7 @@ public class AboutController {
     public String getAllAbout(Model model) {
         List<AboutModel> list = aboutService.getALLAbout();
         model.addAttribute("aboutModel", list);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return "about/about";
     }
 

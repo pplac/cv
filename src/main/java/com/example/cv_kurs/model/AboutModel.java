@@ -24,13 +24,14 @@ public class AboutModel {
     @Column(name = "surname")
     private String surname;
 
-    @Column(name = "address")
+    @Column(name = "address", length = 500)
     private String address;
 
     @Column(name = "email")
     private String email;
 
-    @Column(name = "description")
+    @Column(name = "description", length = 500)
+    @Lob
     private String description;
 
 
