@@ -81,8 +81,7 @@
                             </div>
                             <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                 <textarea class="form-control" type="text" rows="5" name="jobDescription"
-                                          placeholder="opisz swoje obowiązki">
-                                </textarea>
+                                          placeholder="opisz swoje obowiązki"></textarea>
                             </div>
                         </div>
                     </form>

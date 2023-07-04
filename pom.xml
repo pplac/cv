@@ -12,8 +12,8 @@
     <artifactId>Cv_kurs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Cv_kurs</name>
-    <description>Cv_kurs</description>
+    <name>My-cv</name>
+    <description>My-cv</description>
     <properties>
         <java.version>17</java.version>
     </properties>

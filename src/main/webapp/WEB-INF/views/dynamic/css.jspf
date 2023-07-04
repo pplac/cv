@@ -15,6 +15,6 @@
     <link href='<c:url value="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"/>' rel="stylesheet" type="text/css" />
     <link href='<c:url value="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"/>' rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href='<c:url value="/resources/css/mojeStyle.css"/>' rel="stylesheet" />
+    <link href='<c:url value="/resources/css/myStyle.css"/>' rel="stylesheet" />
     <link href='<c:url value="/resources/css/styles.css"/>' rel="stylesheet" />
 </head>

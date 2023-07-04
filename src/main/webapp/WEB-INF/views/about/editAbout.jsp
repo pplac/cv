@@ -60,14 +60,9 @@
                                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             </div>
                         </div>
-
                     </div>
                 </form>
-
-
             </div>
-
-
         </div>
     </section>
 </div>

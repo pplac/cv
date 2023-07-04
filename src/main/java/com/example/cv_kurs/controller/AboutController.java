@@ -34,13 +34,6 @@ public class AboutController {
         return new RedirectView("/about");
     }
 
-    @PostMapping("/about/{id}")
-    public RedirectView postDeleteAbout(@PathVariable("id") Long id) {
-        aboutService.deleteAbout(id);
-        return new RedirectView("/about");
-    }
-
-
     @GetMapping("/editAbout/{id}")
     public String getEditAbout(@PathVariable("id") Long id, Model model){
         AboutModel about = aboutService.getAboutById(id);
@@ -48,6 +41,11 @@ public class AboutController {
         return "about/editAbout";
     }
 
+    @PostMapping("/about/{id}")
+    public RedirectView postDeleteAbout(@PathVariable("id") Long id) {
+        aboutService.deleteAbout(id);
+        return new RedirectView("/about");
+    }
 
     @PostMapping("/addAbout/{id}")
     public RedirectView postEditAbout(AboutModel editAbout){

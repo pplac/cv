@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "mojeStyle.css";
+@import "myStyle.css";
 /*!
 * Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2022 Start Bootstrap
@@ -7330,7 +7330,7 @@ textarea.form-control-lg {
 
 .my-5 {
   margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .my-auto {
@@ -11392,6 +11392,7 @@ p.lead {
     display: flex;
     flex-direction: column;
     width: 14rem;
+    border-radius: 2rem;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -11425,14 +11426,14 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
+  height: 2.7rem;
+  width: 2.7rem;
+  background-color: #6c757d;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   margin-left: 0.7rem;
 }
 .social-icons .social-icon:last-child {
