@@ -16,33 +16,17 @@
         <div class="resume-section-content">
             <c:forEach items="${aboutModel}" var="about">
                 <div class="container-fluid">
-
                     <h1 class="mb-0">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                    ${about.name}
-                            </div>
-                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                                <span class="text-primary">${about.surname}</span>
-                            </div>
-                        </div>
+                            ${about.name}
+                        <span class="text-primary">${about.surname}</span>
                     </h1>
-
-
                     <div class="subheading mb-5">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                    ${about.address}
-                            </div>
-                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                                <a href="plac.paulina@email.com">${about.email}</a>
-                            </div>
-                        </div>
+                            ${about.address}
+                        <a href="mailto: plac.paulina@email.com"><span class="email-font">${about.email}</span></a>
                     </div>
-
                     <div class="row">
-                        <div class="container-margin-bottom" class="lead mb-5"><span
-                                class="text-primary">About me</span>
+                        <div class="container-margin-bottom">
+                            <span class="about-me-font">About me</span>
                         </div>
                     </div>
 
