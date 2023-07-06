@@ -68,17 +68,17 @@
                             <div class="row">
                                 <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
                                     <input class="form-control" type="text" name="name"
-                                           placeholder="imię">
+                                           placeholder="name">
                                 </div>
                                 <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
                                     <input class="form-control" type="text" name="surname"
-                                           placeholder="nazwisko">
+                                           placeholder="surname">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                     <input class="form-control" type="text" name="address"
-                                           placeholder="adres">
+                                           placeholder="address">
                                 </div>
                                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
                                     <input class="form-control" type="text" name="email"

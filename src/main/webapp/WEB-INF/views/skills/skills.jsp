@@ -14,8 +14,8 @@
     <!-- Skills-->
     <section class="resume-section" id="skills">
         <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <h2 class="mb-5" style="margin-left: 1rem">Skills</h2>
+            <div class="subheading mb-3">Technical Skills</div>
             <ul class="list-inline dev-icons">
                 <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                 <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
@@ -30,23 +30,23 @@
                 <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
                 <li class="list-inline-item"><i class="fab fa-npm"></i></li>
             </ul>
-            <div class="subheading mb-3">Workflow</div>
+            <div class="subheading mb-3">Personal Skills</div>
             <ul class="fa-ul mb-0">
                 <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Mobile-First, Responsive Design
+                    <span class="fa-li"><i class="fas fa-check-circle" ></i></span>
+                    Ability to work in a team
                 </li>
                 <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Cross Browser Testing & Debugging
+                    <span class="fa-li"><i class="fas fa-check-circle" style="color: #146c43"></i></span>
+                    Communicativeness
                 </li>
                 <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Cross Functional Teams
+                    <span class="fa-li"><i class="fas fa-check-circle" style="color: #146c43"></i></span>
+                    Accuracy in every task
                 </li>
                 <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Agile Development & Scrum
+                    <span class="fa-li"><i class="fas fa-check-circle" style="color: #146c43"></i></span>
+                    Commitment at work
                 </li>
             </ul>
         </div>
@@ -56,4 +56,4 @@
 <%@include file="../dynamic/javaScript.jspf" %>
 
 </body>
-</html>
+

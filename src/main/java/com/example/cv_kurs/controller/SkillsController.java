@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping(value = "/skills")
+@RequestMapping
 public class SkillsController {
 
-    @GetMapping
+    @GetMapping("/skills")
     public String getHome() {
-        return "personalInfo/skills";
+        return "skills/skills";
     }
 
 }

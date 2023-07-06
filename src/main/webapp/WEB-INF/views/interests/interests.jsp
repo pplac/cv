@@ -14,7 +14,7 @@
     <!-- Interests-->
     <section class="resume-section" id="interests">
         <div class="resume-section-content">
-            <h2 class="mb-5">Interests</h2>
+            <h2 class="mb-5" style="margin-left: 1rem">Interests</h2>
             <c:forEach items="${interestsModel}" var="interests">
                 <div class="container-fluid">
                     <div class="row">

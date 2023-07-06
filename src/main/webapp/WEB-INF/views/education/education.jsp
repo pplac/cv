@@ -13,7 +13,7 @@
     <section class="resume-section" id="education">
 
         <div class="resume-section-content">
-            <h2 class="mb-5">Education</h2>
+            <h2 class="mb-5" style="margin-left: 1rem">Education</h2>
             <c:forEach items="${educationModel}" var="education">
                 <div class="container">
                     <div class="row">
@@ -106,4 +106,4 @@
 <%@include file="../dynamic/javaScript.jspf" %>
 
 </body>
-</html>
+
