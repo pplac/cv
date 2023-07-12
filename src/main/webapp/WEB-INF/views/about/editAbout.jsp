@@ -49,12 +49,9 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-
-                                <textarea class="form-control" type="text" name="description" rows="5">
-                                    ${aboutModel.description}
-                                </textarea>
+                                <textarea class="form-control" type="text" name="description"
+                                          rows="5">${aboutModel.description}</textarea>
                             </div>
-
                             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <input class="btn-edit" type="submit" value="Save changes">
                                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>

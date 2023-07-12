@@ -81,6 +81,15 @@ html {
         color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
     }
 
+    .skills-margins {
+        margin-top: 2rem;
+    }
+
+    .skills-list {
+        list-style: none inside none;
+        padding-left: 1rem;
+    }
+
 }
 
 

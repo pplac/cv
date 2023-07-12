@@ -14,25 +14,24 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class AboutService {
 
-    private final AboutRepository aboutRepo;
+    private final AboutRepository aboutRepository;
 
     public List<AboutModel> getALLAbout() {
-        return aboutRepo.findAll();
+        return aboutRepository.findAll();
     }
 
     public void addAbout(AboutModel about) {
-        aboutRepo.save(about);
+        aboutRepository.save(about);
     }
 
     public void deleteAbout(Long id) {
-        aboutRepo.deleteById(id);
+        aboutRepository.deleteById(id);
     }
 
-
     public AboutModel getAboutById(Long id) {
-        Optional<AboutModel> about = aboutRepo.findById(id);
+        Optional<AboutModel> about = aboutRepository.findById(id);
         if (about.isPresent()) {
-            return aboutRepo.findById(id).orElse(null);
+            return aboutRepository.findById(id).orElse(null);
         } else {
             log.info("brak");
             return null;
@@ -40,11 +39,6 @@ public class AboutService {
     }
 
     public void saveEditAbout(AboutModel editAbout) {
-        aboutRepo.save(editAbout);
+        aboutRepository.save(editAbout);
     }
-
-
-//    public void updateAboutDescription(Long id, String description) {
-//        aboutRepo.updateDescriptionById(id, description);
-//    }
 }

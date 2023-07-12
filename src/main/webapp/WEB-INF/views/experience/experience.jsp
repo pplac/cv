@@ -53,7 +53,7 @@
 
             <div class="container-fluid">
                 <div class="container-margin-top">
-                    <form method="post" action='<c:url value="/experience"/>'>
+                    <form method="post" action='<c:url value="../experience"/>'>
                         <div class="row">
                             <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                 <input class="form-control" type="text" name="jobTitle"
