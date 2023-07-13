@@ -24,14 +24,7 @@ public class SkillsController {
     private final TechnicalSkillsService technicalSkillsService;
     private final PersonalSkillsService personalSkillsService;
 
-//    @GetMapping("/skills")
-//    public String getAllSkills(Model model) {
-//        List<TechnicalSkillsModel> list = skillsService.getAllSkills();
-//        model.addAttribute("skillsModel", list);
-//        return "skills/skills";
-//    }
-
-        @GetMapping("/skills")
+    @GetMapping("/skills")
     public String getAllSkills(Model model) {
         List<TechnicalSkillsModel> list = technicalSkillsService.getAllTechnicalSkills();
         List<PersonalSkillsModel> list2 = personalSkillsService.getAllPersonalSkills();
@@ -39,13 +32,6 @@ public class SkillsController {
         model.addAttribute("personalModel", list2);
         return "skills/skills";
     }
-
-
-//    @PostMapping("/skills")
-//    public RedirectView postAddSkills(SkillsModel skills) {
-//        skillsService.addSkills(skills);
-//        return new RedirectView("/skills");
-//    }
 
     @PostMapping("/skills/technicalSkills")
     public RedirectView postAddTechnicalSkills(TechnicalSkillsModel technicalSkills) {
@@ -59,10 +45,15 @@ public class SkillsController {
         return new RedirectView("/skills");
     }
 
-//    @PostMapping("/skills/{id}")
-//    public RedirectView postDeleteSkills(@PathVariable("id") Long id) {
-//        skillsService.deleteSkills(id);
-//        return new RedirectView("/skills");
-//    }
+    @PostMapping("/deleteTechnicalSkills/{id}")
+    public RedirectView postDeleteTechnicalSkills(@PathVariable("id") Long id) {
+        technicalSkillsService.deleteTechnicalSkills(id);
+        return new RedirectView("/skills");
+    }
 
+    @PostMapping("/deletePersonalSkills/{id}")
+    public RedirectView postDeletePersonalSkills(@PathVariable("id") Long id) {
+        personalSkillsService.deletePersonalSkills(id);
+        return new RedirectView("/skills");
+    }
 }

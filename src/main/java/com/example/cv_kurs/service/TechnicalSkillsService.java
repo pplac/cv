@@ -25,11 +25,11 @@ public class TechnicalSkillsService {
         technicalSkillsRepository.save(technicalSkills);
     }
 
-    public void deleteSkills(Long id) {
+    public void deleteTechnicalSkills(Long id) {
         technicalSkillsRepository.deleteById(id);
     }
 
-    public TechnicalSkillsModel getSkillsById(Long id) {
+    public TechnicalSkillsModel getTechnicalSkillsById(Long id) {
         Optional<TechnicalSkillsModel> skills = technicalSkillsRepository.findById(id);
         if (skills.isPresent()) {
             return technicalSkillsRepository.findById(id).orElse(null);
@@ -39,7 +39,7 @@ public class TechnicalSkillsService {
         }
     }
 
-    public void saveEditSkills(TechnicalSkillsModel skillsModel) {
+    public void saveEditTechnicalSkills(TechnicalSkillsModel skillsModel) {
         technicalSkillsRepository.save(skillsModel);
     }
 }
