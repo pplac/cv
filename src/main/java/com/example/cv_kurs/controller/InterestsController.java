@@ -1,6 +1,6 @@
 package com.example.cv_kurs.controller;
 
-
+import com.example.cv_kurs.model.AboutModel;
 import com.example.cv_kurs.model.InterestsModel;
 import com.example.cv_kurs.service.InterestsService;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +19,6 @@ import java.util.List;
 @RequestMapping
 public class InterestsController {
 
-
     private final InterestsService interestsService;
 
     @GetMapping("/interests")
@@ -32,6 +31,19 @@ public class InterestsController {
     @PostMapping("/interests")
     public RedirectView postAddInterests(InterestsModel interests) {
         interestsService.addInterests(interests);
+        return new RedirectView("/interests");
+    }
+
+    @GetMapping("/editInterests/{id}")
+    public String getEditInterests(@PathVariable("id") Long id, Model model) {
+        InterestsModel interests = interestsService.getInterestsById(id);
+        model.addAttribute("interestsModel", interests);
+        return "interests/editInterests";
+    }
+
+    @PostMapping("/addInterests/{id}")
+    public RedirectView postEditInterests(InterestsModel editInterests) {
+        interestsService.saveEditInterests(editInterests);
         return new RedirectView("/interests");
     }
 

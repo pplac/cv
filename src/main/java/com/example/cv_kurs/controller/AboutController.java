@@ -1,6 +1,5 @@
 package com.example.cv_kurs.controller;
 
-
 import com.example.cv_kurs.model.AboutModel;
 import com.example.cv_kurs.service.AboutService;
 import lombok.RequiredArgsConstructor;
@@ -15,14 +14,18 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping
 public class AboutController {
 
     private final AboutService aboutService;
 
+    @GetMapping("/")
+    public RedirectView getHome() {
+        return new RedirectView("/about");
+    }
+
     @GetMapping("/about")
     public String getAllAbout(Model model) {
-        List<AboutModel> list = aboutService.getALLAbout();
+        List<AboutModel> list = aboutService.getAllAbout();
         model.addAttribute("aboutModel", list);
 //        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return "about/about";
@@ -35,14 +38,14 @@ public class AboutController {
     }
 
     @GetMapping("/editAbout/{id}")
-    public String getEditAbout(@PathVariable("id") Long id, Model model){
+    public String getEditAbout(@PathVariable("id") Long id, Model model) {
         AboutModel about = aboutService.getAboutById(id);
         model.addAttribute("aboutModel", about);
         return "about/editAbout";
     }
 
     @PostMapping("/addAbout/{id}")
-    public RedirectView postEditAbout(AboutModel editAbout){
+    public RedirectView postEditAbout(AboutModel editAbout) {
         aboutService.saveEditAbout(editAbout);
         return new RedirectView("/about");
     }

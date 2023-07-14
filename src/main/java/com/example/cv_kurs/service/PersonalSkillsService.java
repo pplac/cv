@@ -30,18 +30,4 @@ public class PersonalSkillsService {
     public void deletePersonalSkills(Long id) {
         personalSkillsRepository.deleteById(id);
     }
-
-    public PersonalSkillsModel getPersonalSkillsById(Long id) {
-        Optional<PersonalSkillsModel> skills = personalSkillsRepository.findById(id);
-        if (skills.isPresent()) {
-            return personalSkillsRepository.findById(id).orElse(null);
-        } else {
-            log.info("brak");
-            return null;
-        }
-    }
-
-    public void saveEditPersonalSkills(PersonalSkillsModel skillsModel) {
-        personalSkillsRepository.save(skillsModel);
-    }
 }

@@ -20,7 +20,7 @@ public class InterestsModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "akapit")
-    private String akapit;
+    @Column(name = "paragraph")
+    private String paragraph;
 
 }

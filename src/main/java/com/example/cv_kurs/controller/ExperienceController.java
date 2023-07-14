@@ -1,6 +1,5 @@
 package com.example.cv_kurs.controller;
 
-
 import com.example.cv_kurs.model.ExperienceModel;
 import com.example.cv_kurs.service.ExperienceService;
 import lombok.RequiredArgsConstructor;
@@ -18,13 +17,12 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping
 public class ExperienceController {
 
     private final ExperienceService service;
 
     @GetMapping("/experience")
-    public String getAddExperience(Model model) {
+    public String getAllExperience(Model model) {
         List<ExperienceModel> experienceModelList = service.getAllExperiences();
         model.addAttribute("experienceModel", experienceModelList);
         return "experience/experience";
@@ -35,14 +33,6 @@ public class ExperienceController {
         service.addExperience(experience);
         return new RedirectView("/experience");
     }
-
-    @PostMapping("/experience/{id}")
-    public RedirectView deleteExperience(@PathVariable("id") Long id) {
-        service.deleteExperience(id);
-        return new RedirectView("/experience");
-    }
-
-
 
     @GetMapping("/editExperience/{id}")
     public String getEditExperience(@PathVariable("id") Long id, Model model) {
@@ -57,10 +47,9 @@ public class ExperienceController {
         return new RedirectView("/experience");
     }
 
-//    @GetMapping
-//    public Page<ExperienceModel> getAllExperience(Pageable pageable) {
-//        int currentPage = pageable.getPageNumber();
-//        return service.getAllExperiences(pageable);
-//    }
-
+    @PostMapping("/experience/{id}")
+    public RedirectView deleteExperience(@PathVariable("id") Long id) {
+        service.deleteExperience(id);
+        return new RedirectView("/experience");
+    }
 }

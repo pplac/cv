@@ -1,6 +1,5 @@
 package com.example.cv_kurs.controller;
 
-
 import com.example.cv_kurs.model.EducationModel;
 import com.example.cv_kurs.service.EducationService;
 import lombok.RequiredArgsConstructor;
@@ -21,21 +20,15 @@ public class EducationController {
     private final EducationService educationService;
 
     @GetMapping("/education")
-    public String getEducationList(Model model) {
+    public String getAllEducation(Model model) {
         List<EducationModel> educationModelList = educationService.getAllEducation();
         model.addAttribute("educationModel", educationModelList);
         return "education/education";
     }
 
     @PostMapping("/education")
-    public RedirectView postAddEducation (EducationModel model) {
+    public RedirectView postAddEducation(EducationModel model) {
         educationService.addEducation(model);
-        return new RedirectView("/education");
-    }
-
-    @PostMapping("/education/{id}")
-    public RedirectView postDeleteEducation(@PathVariable("id") Long id) {
-        educationService.deleteEducation(id);
         return new RedirectView("/education");
     }
 
@@ -52,6 +45,9 @@ public class EducationController {
         return new RedirectView("/education");
     }
 
-
-
+    @PostMapping("/education/{id}")
+    public RedirectView postDeleteEducation(@PathVariable("id") Long id) {
+        educationService.deleteEducation(id);
+        return new RedirectView("/education");
+    }
 }

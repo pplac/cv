@@ -17,7 +17,6 @@
     <section class="resume-section" id="experience">
         <div class="resume-section-content">
             <h2 class="mb-5" style="margin-left: 1rem">Experience</h2>
-
             <c:forEach items="${experienceModel}" var="experience">
                 <div class="container">
                     <div class="row">
@@ -36,7 +35,6 @@
                         </div>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             <form method="post" action='<c:url value="/experience/${experience.id}"/>'>
-
                                 <input type="submit" class="btn-edit" value="Delete"/>
                             </form>
                         </div>
@@ -45,12 +43,9 @@
                                 <input type="submit" class="btn-edit" value="Edit"/>
                             </form>
                         </div>
-
                     </div>
-
                 </div>
             </c:forEach>
-
             <div class="container-fluid">
                 <div class="container-margin-top">
                     <form method="post" action='<c:url value="../experience"/>'>

@@ -28,18 +28,4 @@ public class TechnicalSkillsService {
     public void deleteTechnicalSkills(Long id) {
         technicalSkillsRepository.deleteById(id);
     }
-
-    public TechnicalSkillsModel getTechnicalSkillsById(Long id) {
-        Optional<TechnicalSkillsModel> skills = technicalSkillsRepository.findById(id);
-        if (skills.isPresent()) {
-            return technicalSkillsRepository.findById(id).orElse(null);
-        } else {
-            log.info("brak");
-            return null;
-        }
-    }
-
-    public void saveEditTechnicalSkills(TechnicalSkillsModel skillsModel) {
-        technicalSkillsRepository.save(skillsModel);
-    }
 }

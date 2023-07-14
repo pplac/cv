@@ -16,16 +16,12 @@ public class AboutService {
 
     private final AboutRepository aboutRepository;
 
-    public List<AboutModel> getALLAbout() {
+    public List<AboutModel> getAllAbout() {
         return aboutRepository.findAll();
     }
 
     public void addAbout(AboutModel about) {
         aboutRepository.save(about);
-    }
-
-    public void deleteAbout(Long id) {
-        aboutRepository.deleteById(id);
     }
 
     public AboutModel getAboutById(Long id) {
@@ -40,5 +36,9 @@ public class AboutService {
 
     public void saveEditAbout(AboutModel editAbout) {
         aboutRepository.save(editAbout);
+    }
+
+    public void deleteAbout(Long id) {
+        aboutRepository.deleteById(id);
     }
 }

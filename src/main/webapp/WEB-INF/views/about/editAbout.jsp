@@ -16,16 +16,11 @@
     <!-- About-->
     <section class="resume-section" id="about">
         <div class="resume-section-content">
-
-
             <div class="container-fluid">
-
                 <div class="subheading mb-5">
                     About changes
                 </div>
-
                 <form method="post" action='<c:url value="/addAbout/${aboutModel.id}"/>'>
-
                     <div class="container-margin-top">
                         <div class="row">
                             <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
