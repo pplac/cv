@@ -1,4 +1,3 @@
-
 <!-- Personal Skills-->
 <div class="skills-margins">
     <div class="subheading mb-3" style="margin-left: 1rem">Personal Skills</div>
@@ -11,13 +10,17 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-            <form method="post" action='<c:url value="/deletePersonalSkills/${personalSkills.id}"/>'>
-                <input type="submit" class="btn-edit" value="Delete"/>
-            </form>
-        </div>
+        <security:authorize access="hasAnyRole('ADMIN')">
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                <form method="post" action='<c:url value="/deletePersonalSkills/${personalSkills.id}"/>'>
+                    <input type="submit" class="btn-edit" value="Delete"/>
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                </form>
+            </div>
+        </security:authorize>
     </div>
     </c:forEach>
+    <security:authorize access="hasAnyRole('ADMIN')">
     <div class="container-fluid">
         <form method="post" action='<c:url value="../skills/personalSkills"/>'>
             <div style="margin-top: 1rem">
@@ -28,10 +31,12 @@
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                         <input class="btn-edit" type="submit" value="Add">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </div>
                 </div>
             </div>
         </form>
     </div>
+    </security:authorize>
 
 

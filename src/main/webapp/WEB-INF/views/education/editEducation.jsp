@@ -1,5 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@include file="../dynamic/css.jspf" %>
@@ -29,6 +31,7 @@
                             </div>
                             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <input class="btn-edit" type="submit" value="Save changes">
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             </div>
                         </div>
                         <div class="row">
