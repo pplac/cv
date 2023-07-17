@@ -12,7 +12,6 @@
 
 <!-- Page Content-->
 <div class="container-fluid p-0">
-
     <!-- Experience-->
     <section class="resume-section" id="experience">
         <div class="resume-section-content">
@@ -30,7 +29,8 @@
                             </div>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3">
-                            <div class="flex-shrink-0"><span class="text-primary">${experience.workDate}</span>
+                            <div class="flex-shrink-0">
+                                <span class="text-primary">${experience.workDate}</span>
                             </div>
                         </div>
                         <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">

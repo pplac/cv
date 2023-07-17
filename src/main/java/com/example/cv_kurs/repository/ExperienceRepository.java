@@ -13,7 +13,5 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface ExperienceRepository extends JpaRepository<ExperienceModel, Long> {
 
-
     Page<ExperienceModel> findAllBy(Pageable pageable);
-
 }

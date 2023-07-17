@@ -30,7 +30,4 @@ public class ExperienceModel {
 
     @Column(name = "work_date")
     private String workDate;
-
-
-
 }

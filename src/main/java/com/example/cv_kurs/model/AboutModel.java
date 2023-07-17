@@ -33,6 +33,4 @@ public class AboutModel {
     @Column(name = "description", length = 500)
     @Lob
     private String description;
-
-
 }

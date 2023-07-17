@@ -21,10 +21,7 @@ public interface AboutRepository extends JpaRepository<AboutModel, Long> {
 //    @Transactional
 //    @Query("UPDATE AboutModel a SET a.description = :description WHERE a.id = :id")
 //    int updateDescriptionById(@Param("id") Long id, @Param("description") String description);
-
 //    Optional<AboutModel> findById(Long id);
 
     Page<AboutModel> findAllBy(Pageable pageable);
-
-
 }

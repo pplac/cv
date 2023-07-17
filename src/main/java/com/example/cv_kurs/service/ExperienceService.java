@@ -23,7 +23,6 @@ public class ExperienceService {
 
     private final ExperienceRepository repo;
 
-
     public List<ExperienceModel> getAllExperiences() {
         return repo.findAll();
     }
@@ -49,6 +48,4 @@ public class ExperienceService {
     public void saveEditExperience(ExperienceModel editExperience) {
         repo.save(editExperience);
     }
-
-
 }
