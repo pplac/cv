@@ -33,5 +33,4 @@ public class EducationModel {
 
     @Column(name = "course_date")
     private String courseDate;
-
 }

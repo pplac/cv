@@ -42,6 +42,4 @@ public class InterestsService {
     public void deleteInterests(Long id) {
         interestsRepository.deleteById(id);
     }
-
-
 }

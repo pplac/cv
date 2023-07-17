@@ -12,5 +12,4 @@ import org.springframework.stereotype.Repository;
 public interface PersonalSkillsRepository extends JpaRepository<PersonalSkillsModel, Long> {
 
     Page<AboutModel> findAllBy(Pageable pageable);
-
 }

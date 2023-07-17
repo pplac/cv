@@ -9,10 +9,8 @@
 <body id="page-top">
 <!-- Navigation-->
 <%@include file="../dynamic/navigationMain.jspf" %>
-
 <!-- Page Content-->
 <div class="container-fluid p-0">
-
     <!-- About-->
     <section class="resume-section" id="about">
         <div class="resume-section-content">

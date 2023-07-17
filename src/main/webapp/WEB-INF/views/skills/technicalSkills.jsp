@@ -1,5 +1,5 @@
-<!-- Technical Skills-->
 
+<!-- Technical Skills-->
 <div class="subheading mb-3" style="margin-left: 1rem">Technical Skills</div>
 <c:forEach items="${technicalModel}" var="techSkills">
     <div class="row">

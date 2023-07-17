@@ -11,5 +11,4 @@ import org.springframework.stereotype.Repository;
 public interface TechnicalSkillsRepository extends JpaRepository<TechnicalSkillsModel, Long> {
 
     Page<AboutModel> findAllBy(Pageable pageable);
-
 }

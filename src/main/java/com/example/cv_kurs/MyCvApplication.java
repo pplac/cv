@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CvKursApplication {
+public class MyCvApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CvKursApplication.class, args);
+        SpringApplication.run(MyCvApplication.class, args);
     }
-
 }

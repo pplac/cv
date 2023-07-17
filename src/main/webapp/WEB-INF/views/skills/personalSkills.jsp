@@ -1,3 +1,4 @@
+
 <!-- Personal Skills-->
 <div class="skills-margins">
     <div class="subheading mb-3" style="margin-left: 1rem">Personal Skills</div>

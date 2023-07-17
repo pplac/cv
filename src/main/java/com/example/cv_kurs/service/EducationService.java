@@ -43,5 +43,4 @@ public class EducationService {
     public void saveEditEducation(EducationModel editEducation) {
         educationRepository.save(editEducation);
     }
-
 }

@@ -21,6 +21,4 @@ public class TechnicalSkillsModel {
 
     @Column(name = "technical_skills")
     private String technicalSkills;
-
-
 }

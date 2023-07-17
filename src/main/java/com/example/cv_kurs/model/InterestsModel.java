@@ -22,5 +22,4 @@ public class InterestsModel {
 
     @Column(name = "paragraph")
     private String paragraph;
-
 }

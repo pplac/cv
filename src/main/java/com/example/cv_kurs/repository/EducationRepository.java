@@ -9,5 +9,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface EducationRepository extends JpaRepository<EducationModel, Long> {
 
     Page<EducationModel> findAllBy(Pageable pageable);
-
 }

@@ -9,7 +9,6 @@
 <body id="page-top">
 <!-- Navigation-->
 <%@include file="../dynamic/navigationMain.jspf" %>
-
 <!-- Page Content-->
 <div class="container-fluid p-0">
     <!-- Experience-->
