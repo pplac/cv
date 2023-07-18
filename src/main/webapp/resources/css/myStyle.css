@@ -47,13 +47,6 @@ html {
         font-family: var(--bs-body-font-family);
     }
 
-
-    /*@media (min-width: 768px) {*/
-    /*    .form-control {*/
-    /*        padding: 10px;*/
-    /*        margin: 10px;*/
-    /*    }*/
-    /*}*/
     .container-margin-top {
         margin-top: 40px;
     }
