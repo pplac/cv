@@ -39,22 +39,19 @@ public class  Auth {
 
     private SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()
-
                 .authorizeRequests()
-                .antMatchers("/about", "/experience", "/education", "/skills", "/interests") // mają dostęp wszyscy użytkownicy z ROLE_USER
+                .antMatchers("/about", "/experience", "/education", "/skills", "/interests")
                 .hasAnyAuthority("ROLE_USER")
-//                .antMatchers("/index", "/experience", "/education", "/skills", "/interests") // mają dostęp wszyscy użytkownicy z ROLE_USER
-                .antMatchers(HttpMethod.POST, "/experience", "/about").permitAll()
-                .anyRequest().hasRole("ROLE_ADMIN")
-//                .hasAnyAuthority("ROLE_ADMIN")
+                .antMatchers(HttpMethod.POST).permitAll()
+                .anyRequest().hasRole("ADMIN")
                 .and()
-                .formLogin() // wskazuje, że teraz będę konfigurował formularz autoryzacji
-                .loginPage("/login")
-                .usernameParameter("username") // nadajemy nazwę jaka będzie jako name w inpucie loginu formularza
-                .passwordParameter("password") // nadajemy nazwę jaka będzie jako name w inpucie hasła formularza
+                .formLogin()
+                .loginPage("/login").permitAll()
+                .usernameParameter("username")
+                .passwordParameter("password")
                 .loginProcessingUrl("/index")
-                .failureForwardUrl("/login?error") // co się stanie w momencie wpisania błędnych danych
-                .defaultSuccessUrl("/login"); // co się stanie w momencie prawidłowego wpisania loginu i hasła
+                .failureForwardUrl("/login?error")
+                .defaultSuccessUrl("/");
         return http.build();
     }
 }
