@@ -56,11 +56,11 @@
                             <div class="row">
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                     <input class="form-control" type="text" name="jobTitle"
-                                           placeholder="stanowisko">
+                                           placeholder="job title">
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                     <input class="form-control" type="text" name="workDate"
-                                           placeholder="rozpoczęcie - zakończenie">
+                                           placeholder="start - end">
                                 </div>
                                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <input class="btn-edit" type="submit" value="Add">
@@ -70,11 +70,11 @@
                             <div class="row">
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                     <input class="form-control" type="text" name="companyName"
-                                           placeholder="nazwa firmy">
+                                           placeholder="company name">
                                 </div>
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                 <textarea class="form-control" type="text" rows="5" name="jobDescription"
-                                          placeholder="opisz swoje obowiązki"></textarea>
+                                          placeholder="job description"></textarea>
                                 </div>
                             </div>
                         </form>

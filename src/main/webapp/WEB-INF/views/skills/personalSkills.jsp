@@ -3,7 +3,7 @@
     <div class="subheading mb-3" style="margin-left: 1rem">Personal Skills</div>
     <c:forEach items="${personalModel}" var="personalSkills">
     <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
             <ul class="skills-list">
                 <li>
                         ${personalSkills.personalSkills}
@@ -25,7 +25,7 @@
         <form method="post" action='<c:url value="../skills/personalSkills"/>'>
             <div style="margin-top: 1rem">
                 <div class="row">
-                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                         <input class="form-control" type="text" name="personalSkills"
                                placeholder="personal skills">
                     </div>

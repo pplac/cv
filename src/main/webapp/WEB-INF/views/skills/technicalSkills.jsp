@@ -2,11 +2,11 @@
 <div class="subheading mb-3" style="margin-left: 1rem">Technical Skills</div>
 <c:forEach items="${technicalModel}" var="techSkills">
     <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
             <ul class="skills-list">
                 <li>
                         <span><i class="fas fa-check-circle"
-                                 style="color: #146c43"></i> ${techSkills.technicalSkills}</span>
+                                 style="color: #d48a6e"></i> ${techSkills.technicalSkills}</span>
                 </li>
             </ul>
         </div>
@@ -25,7 +25,7 @@
         <form method="post" action='<c:url value="../skills/technicalSkills"/>'>
             <div style="margin-top: 1rem">
                 <div class="row">
-                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                         <input class="form-control" type="text" name="technicalSkills"
                                placeholder="technical skills">
                     </div>

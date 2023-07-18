@@ -56,11 +56,11 @@
                             <div class="row">
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                     <input class="form-control" type="text" name="university"
-                                           placeholder="uczelnia">
+                                           placeholder="university">
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                     <input class="form-control" type="text" name="courseDate"
-                                           placeholder="data">
+                                           placeholder="start - end">
                                 </div>
                                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <input class="btn-edit" type="submit" value="Add">
@@ -70,17 +70,17 @@
                             <div class="row">
                                 <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
                                     <input class="form-control" type="text" name="academicTitle"
-                                           placeholder="tytuł">
+                                           placeholder="academic title">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
                                     <input class="form-control" type="text" name="course"
-                                           placeholder="kierunek">
+                                           placeholder="course">
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                     <input class="form-control" type="text" name="grade"
-                                           placeholder="ocena">
+                                           placeholder="grade">
                                 </div>
                             </div>
                         </div>
